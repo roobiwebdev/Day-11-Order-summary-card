@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #e1e8fe;
+}
+
+.hero img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.container,
+.hero img {
+  width: 25em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: white;
+  border-radius: 15px;
+  transition: all 1s ease;
+}
+
+.title {
+  color: #14224b;
+  margin-top: 38px;
+  margin-bottom: 20px;
+  font-weight: 900;
+  font-size: 1.9rem;
+}
+
+.disc {
+  color: #898ca3;
+  font-weight: 600;
+  line-height: 23px;
+  margin: auto;
+  width: 90%;
+}
+
+.price-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f8fe;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 2.4rem;
+  margin-bottom: 3rem;
+  padding: 0 30px;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-plan {
+  margin-left: 25px;
+  line-height: 25px;
+}
+
+.price-plan .plan {
+  color: #14224b;
+  font-weight: 900;
+}
+
+.price-plan .money {
+  color: #898ca3;
+  font-weight: 600;
+}
+
+a {
+  color: #392be1;
+  font-weight: 800;
+  transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+  color: #5a7bf3;
+}
+
+button {
+  width: 90%;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background-color: #3625ec;
+  padding: 15px;
+
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 15px 59px -6px rgba(153, 149, 222, 0.82);
+}
+
+button:hover {
+  background-color: #776df1;
+}
+
+.cancel {
+  color: #898ca3;
+  font-weight: 700;
+  padding: 30px 0 40px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.cancel:hover {
+  color: black;
+}
+
+@media screen and (width<=460px) {
+  .container,
+  .hero img {
+    width: 21em;
+  }
+  .disc {
+    margin: auto;
+    width: 90%;
+  }
+
+  button {
+    width: 90%;
+    padding: 13px;
+  }
+
+  .price-sec {
+    padding: 0 20px;
+  }
+  .cancel {
+    padding: 25px 0;
+  }
+}
